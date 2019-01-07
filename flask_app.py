@@ -14,3 +14,6 @@ def process_inputs():
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
                            output="You're a wizard %s." % name)
+
+# create a list of different types of cars you can get accordiing to salary, how much money you are willing to spend, and  number of family members
+#
