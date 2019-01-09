@@ -9,11 +9,13 @@ def main():
 @app.route('/process_inputs', methods=['POST'])
 def process_inputs():
     name = request.form.get('input_name', '')
-    dropdown = request.form.get('input_dropdown', '')
+    Console = request.form.get('input_dropdown', '')
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
                            output="You're a wizard %s." % name)
 
-# create a list of different types of cars you can get accordiing to salary, how much money you are willing to spend, and  number of family members
-#
+# create a list of different types of video games you can buy
+# name of the game?
+# what console you want it on?
+# what genre do you like?
